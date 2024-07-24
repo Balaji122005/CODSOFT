@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <p class="navbar-links"><a href="index.html">HOME</a></p>
+            <p class="navbar-links"><a href="collection.html">COLLECTIONS</a></p>
+            <p class="navbar-links"><a href="contact.html">CONTACT</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right; " onclick="closeNavbar()"><i class="fa-solid fa-xmark"></i></p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">HOME</a></p>
+            <p class="side-navbar-link"><a href="collection.html">COLLECTIONS</a></p>
+            <p class="side-navbar-link"><a href="contact.html">CONTACT</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <div class="contactinfo">
+                    <h2 style="text-align: center;">Contact</h2>
+                    <p>name:</p>
+                    <input type="text">
+                    <p>Email:</p>
+                    <input type="text">
+                    <p>Message:</p>
+                    <textarea name="" id="Messageio"></textarea>
+                </div>
+                <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, temporibus!</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    <i class="fa-brands fa-twitter" style="color: white;"></i>
+                    <i class="fa-brands fa-facebook" style="color: white;"></i>
+                    <i class="fa-brands fa-email" style="color: white;"></i>
+                </div>
+            </div>
+        </div>
+        <p style="padding-left: 43%;">@ 2024 Nostra.com</p>
+    </div>
+    <script src="collection.js"></script>
+</body>
+
+</html>

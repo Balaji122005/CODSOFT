@@ -1,0 +1,258 @@
+*{
+    padding :0;
+    margin:0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+   }
+   .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+   }   
+.navbar-links{
+display: flex;
+column-gap: 20px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #76a0e0;
+}
+.navbar-links a:hover{
+    text-decoration: rgb(1, 15, 137) 2px underline;
+    
+}
+.navbar-menu-toggle{
+    display: none;
+}
+.side-navbar{
+    background-color: #1D232C;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: .7s;
+    position: fixed;
+    
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-link a:hover{
+    text-decoration: rgb(1, 15, 137) 2px underline;
+    
+}
+
+.side-navbar-link a{
+    text-decoration: none;
+    color:white;
+}
+.header img{
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.header{
+    gap: 50px;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header h1{
+    font-size: 60px;
+}
+.header p{
+    font-size: 30px;
+}
+.header-btn{
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+    background-color: #1D232C;
+    color: white;
+}
+.service-container-1{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+.service-container-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+.service-container-2 div{
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 10px;
+}
+.new-arrival-container img{
+    width: 200px;
+    border-radius: 10px;
+    height: 200px; 
+}
+.new-arrival-container{
+    flex-basis: 19%;
+    position: relative;
+}
+.new-arrival{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    
+}
+.new-arrival button{
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+}
+.news {
+    text-align: center;
+    padding: 50px;
+}
+
+.news p {
+    padding: 20px 0;
+}
+
+.news .search {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.news button {
+    padding: 10px;
+    background-color: #1D232C;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.footer{
+    margin-top:20px;
+    padding: 40px;
+    background-color: #1D232C;
+    color: white;
+}
+.product-section{
+    margin: 20px;
+}
+.search{
+        width: 80%;
+        border: solid 2px black;   
+        border-radius: 20px; display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: auto;
+}
+.search input:focus{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.products-box img{
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+.products-box{
+    text-align: center;
+    flex-basis: 19%;
+}
+.search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.contactinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 300px;
+    padding-left:36%;
+}
+.contactinfo input{
+    padding: 10px;
+}
+.footer-icon-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+textarea {
+    
+    
+    height: 50px;
+    position: relative;
+    width: 300px;
+    resize: vertical;
+    font-size: 20px;
+}
+
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .service-container-1{
+        display: flex;
+        row-gap: 10px;        flex-direction:column;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }  
+    .header img{
+        width: 300px;
+        height: 300px;
+    }
+    textarea{
+        height: 150px;
+    position: relative;
+    width: 190px;
+    resize: vertical;
+    margin: 5px;
+    font-size: 10px;
+    }
+    .new-arrival {
+        flex-direction: column;
+    }
+    .contactinfo{
+        width: 200px;
+        padding-left: 25%;
+    }
+    
+    
+}
